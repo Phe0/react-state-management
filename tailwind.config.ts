@@ -7,13 +7,21 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      blue: "#159ECA",
+      "light-gray": "#404652",
+      gray: "#23272F",
+      white: "#F6F7F9",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      gridTemplateColumns: {
+        "auto-fit-350": "repeat(auto-fit, minmax(200px, 350px))",
       },
     },
+  },
+  fontFamily: {
+    sans: ["Inter", "sans-serif"],
+    serif: ["Merriweather", "serif"],
   },
   plugins: [],
 };
