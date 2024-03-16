@@ -1,10 +1,11 @@
 "use client";
 
 import StoreProvider from "../StoreProvider";
+import MiddleComponent from "./components/MiddleComponent";
 import NameForm from "./components/NameForm";
-import WelcomeUser from "./components/WelcomeUser";
 
 export default function ReduxPage() {
+  console.count("Page");
   return (
     <StoreProvider>
       <main>
@@ -16,7 +17,7 @@ export default function ReduxPage() {
             <NameForm />
           </section>
           <section className="bg-light-gray p-6 rounded-lg">
-            <WelcomeUser />
+            <MiddleComponent />
           </section>
         </div>
       </main>

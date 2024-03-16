@@ -4,6 +4,7 @@ import { Name } from "@/types/Name";
 import { useState } from "react";
 import NameForm from "./components/NameForm";
 import WelcomeUser from "./components/WelcomeUser";
+import MiddleComponent from "./components/MiddleComponent";
 
 export default function StatePropsPages() {
   console.count("Page");
@@ -23,7 +24,7 @@ export default function StatePropsPages() {
           <NameForm onSubmit={setSavedName} />
         </section>
         <section className="bg-light-gray p-6 rounded-lg">
-          <WelcomeUser name={savedName} />
+          <MiddleComponent name={savedName} />
         </section>
       </div>
     </main>

@@ -3,6 +3,7 @@
 import NameForm from "./components/NameForm";
 import WelcomeUser from "./components/WelcomeUser";
 import { NameProvider } from "./components/NameContext";
+import MiddleComponent from "./components/MiddleComponent";
 
 export default function ContextPage() {
   console.count("Page");
@@ -18,7 +19,7 @@ export default function ContextPage() {
             <NameForm />
           </section>
           <section className="bg-light-gray p-6 rounded-lg">
-            <WelcomeUser />
+            <MiddleComponent />
           </section>
         </div>
       </main>
